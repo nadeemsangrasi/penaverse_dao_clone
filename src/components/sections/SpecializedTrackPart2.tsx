@@ -3,7 +3,7 @@ import Wrapper from "../shared/Wrapper";
 import { cardsData, speciliezCardData } from "../../../data/data";
 import { SpecializedCardType, CardsData } from "@/types/type";
 import SpecializedCard from "../shared/SpecializedCard";
-import Card from "../shared/Card";
+import Card2 from "../shared/Card2";
 
 const SpecializedTrackPart2 = () => {
   return (
@@ -33,16 +33,12 @@ const SpecializedTrackPart2 = () => {
               {cardsData
                 .splice(3)
                 .map(
-                  (
-                    { quater, paragraph, number, border }: CardsData,
-                    index: number
-                  ) => (
-                    <Card
+                  ({ quater, paragraph, number }: CardsData, index: number) => (
+                    <Card2
                       key={index}
                       quater={quater}
                       paragraph={paragraph}
                       cardNo={number}
-                      border={border}
                     />
                   )
                 )}

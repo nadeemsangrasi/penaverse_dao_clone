@@ -1,4 +1,4 @@
-const Card = ({
+const Card2 = ({
   quater,
   paragraph,
   cardNo,
@@ -8,7 +8,7 @@ const Card = ({
   cardNo: number;
 }) => {
   return (
-    <div className="py-8 px-4 border-2  my-4 rounded-lg relative">
+    <div className="py-8 px-4  my-4 rounded-lg relative">
       <p className="font-bold text-[9rem] md:text-[10rem] absolute right-8 top-0 z-0 opacity-10">
         {cardNo}
       </p>
@@ -18,4 +18,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default Card2;
