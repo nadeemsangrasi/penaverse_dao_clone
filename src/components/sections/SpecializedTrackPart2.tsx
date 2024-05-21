@@ -1,6 +1,6 @@
 import React from "react";
 import Wrapper from "../shared/Wrapper";
-import { cardsData, speciliezCardData } from "../../../data/data";
+import { cards2Data, speciliezCardData } from "../../../data/data";
 import { SpecializedCardType, CardsData } from "@/types/type";
 import SpecializedCard from "../shared/SpecializedCard";
 import Card2 from "../shared/Card2";
@@ -30,18 +30,16 @@ const SpecializedTrackPart2 = () => {
               Learn More -&gt;
             </button>
             <div className="md:flex gap-2 ">
-              {cardsData
-                .splice(3)
-                .map(
-                  ({ quater, paragraph, number }: CardsData, index: number) => (
-                    <Card2
-                      key={index}
-                      quater={quater}
-                      paragraph={paragraph}
-                      cardNo={number}
-                    />
-                  )
-                )}
+              {cards2Data.map(
+                ({ quater, paragraph, number }: CardsData, index: number) => (
+                  <Card2
+                    key={index}
+                    quater={quater}
+                    paragraph={paragraph}
+                    cardNo={number}
+                  />
+                )
+              )}
             </div>
           </div>
           {/* right side */}

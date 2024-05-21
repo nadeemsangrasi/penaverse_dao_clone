@@ -21,6 +21,10 @@ export const cardsData: CardsData[] = [
         number: 3,
 
     },
+
+];
+
+export let cards2Data: CardsData[] = [
     {
         quater: "Quarter IV",
         paragraph:
@@ -34,10 +38,8 @@ export const cardsData: CardsData[] = [
             "MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences",
         number: 5,
 
-    },
-];
-
-
+    }
+]
 export const speciliezCardData: SpecializedCardType[] = [
     {
         heading: "Web 3.0 (Blockchain) and Metaverse Specialization",

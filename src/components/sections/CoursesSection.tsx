@@ -33,17 +33,14 @@ const CoursesSection = () => {
           <div className=" my-0 lg:my-12 grid  grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
             {cardsData.map(
               ({ quater, paragraph, number }: CardsData, index: number) => {
-                if (index > 2) {
-                } else {
-                  return (
-                    <Card
-                      key={index}
-                      quater={quater}
-                      paragraph={paragraph}
-                      cardNo={number}
-                    />
-                  );
-                }
+                return (
+                  <Card
+                    key={index}
+                    quater={quater}
+                    paragraph={paragraph}
+                    cardNo={number}
+                  />
+                );
               }
             )}
           </div>
